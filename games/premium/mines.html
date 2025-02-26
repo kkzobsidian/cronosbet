@@ -1,0 +1,140 @@
+<!--
+    * Copyright (c) [2024] [kkZ]
+    * Licensed under the MIT License. See LICENSE file in the project root for full license information.
+-->
+
+<html lang="pt-br">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="(🚨 Slots, Roleta e Jogos ao vivo)">
+
+        <title>Mines</title>
+
+        <!-- FAVICON / ICON -->
+        <link rel="apple-touch-icon" sizes="180x180" href="#">
+        <link rel="icon" type="image/png" sizes="32x32" href="#">
+        <link rel="icon" type="image/png" sizes="16x16" href="#">
+        <link rel="manifest" href="#">
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../../source/assets/css/reset.css">
+        <link rel="stylesheet" href="../../source/assets/css/design.css">
+        <link rel="stylesheet" href="../../source/assets/css/jogo.css">
+    </head>
+
+<body>
+    <style>
+        body {
+            background-image: url(../../source/assets/midia/image/backgrounds/mines-background.webp);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        @media (max-width: 767px) {
+
+            body {
+                background-image: url(../../source/assets/midia/image/backgrounds/mines-background.webp);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            iframe {
+                width: 370px;
+                height: 100%;
+                display: flex;
+                margin: 1rem auto;
+                border-radius: 0px 0px 10px 10px;
+                margin-bottom: 6.5rem;
+                border-radius: 10px;
+            }
+        }
+    </style>
+
+    <body>
+        <section class="header-game">
+            <a class="link-planopremium" href="index.html">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg>
+            </a>
+
+            <img class="avatar2 pulsing" src="../../source/assets/midia/image/avatar/mines-avatar.webp" alt="Mines">
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+            </svg>
+        </section>
+
+
+
+
+        <section class="sinal-container">
+            <div class="divisao">
+                <div class="sinal-value-container cruz">
+                    <p class="sinal"> <img class="icon-jogo"
+                            src="../../source/assets/midia/image/elements/crosshair.webp" alt=""></p>
+                    <p class="" id="normal-valor"></p>
+                </div>
+
+                <div class="sinal-value-container">
+                    <p class="sinal"><img class="icon-jogo" src="../../source/assets/midia/image/elements/refresh.webp"
+                            alt="">GALE</p>
+                    <p class="valor v-1" id="turbo-valor">...</p>
+                </div>
+            </div>
+            <hr>
+            <div class="divisao">
+                <div class="sinal-value-container cruz">
+                    <p class="sinal"><img class="icon-jogo" src="../../source/assets/midia/image/elements/validade.webp"
+                            alt="">VALIDADE</p>
+                    <p class="valor v-2" id="minuto-valor">...</p>
+                </div>
+                <div class="sinal-value-container">
+                    <p class="sinal"><img class="icon-jogo"
+                            src="../../source/assets/midia/image/elements/porcentagem.webp" alt="">ACERTO</p>
+                    <p class="valor v-3" id="assertividade-valor">...</p>
+                </div>
+            </div>
+
+            <audio id="som-clique" src="../../source/assets/midia/audio/cash.mp3" preload="auto"></audio>
+
+            <button id="gerar-sinal" class="unblocked" onclick="gerarNovoSinal()">GERAR NOVO SINAL</button>
+        </section>
+
+
+
+
+
+
+        <iframe id="plataform" allow="clipboard-write" frameborder="0"></iframe>
+        <script src="../../source/assets/js/games/mines-premium.js"></script>
+        <script defer src="../../links.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+
+</html>
+
+
+
+
+
+
+

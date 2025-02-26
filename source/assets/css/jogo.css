@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: black;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+
+}
+
+iframe {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    margin: 0rem auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    margin-bottom: 6.5rem;
+}
+
+.divisao {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.sinal-container {
+    background-color: black;
+    padding: 1rem 0;
+    border-radius: 10px;
+    width: 370px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0rem auto;
+    border: solid 1px white;
+}
+
+.icon-jogo {
+    position: relative;
+    top: 4px;
+    right: 5px;
+    width: 25px;
+    align-items: center;
+}
+
+.cruz {
+    padding: 1rem 0rem;
+    border-right: 1px solid white;
+
+}
+
+hr {
+    width: 90%;
+}
+
+.sinal-value-container {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: .5rem 0;
+    justify-content: center;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.sinal {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+
+}
+
+.valor {
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.v-1 {
+    color: #5ffd63;
+    text-shadow:
+    0 0 20px #5ffd63,
+    0 0 40px #5ffd63,
+    0 0 80px #5ffd63,
+    0 0 90px #5ffd63,
+    0 0 100px #5ffd63,
+    0 0 150px #5ffd63;
+}
+
+.v-2 {
+    color: #ffda00;
+    text-shadow:
+        0 0 20px #ffda00,
+        0 0 40px #ffda00,
+        0 0 80px #ffda00,
+        0 0 90px #ffda00,
+        0 0 100px #ffda00,
+        0 0 150px #ffda00;
+}
+
+.v-3 {
+    color: #dd49ff;
+    text-shadow:
+        0 0 20px #dd49ff,
+        0 0 40px #ff00ff,
+        0 0 80px #ff00ff,
+        0 0 90px #ff00ff,
+        0 0 100px #ff00ff,
+        0 0 150px #ff00ff;
+}
+
+.loader {
+    position: fixed;
+    width: 60px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.ball {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.ball:nth-child(1) {
+    animation: bounce-1 2.1s ease-in-out infinite;
+}
+
+@keyframes bounce-1 {
+    50% {
+        transform: translateY(-10px);
+        width: 3px;
+        height: 3px;
+    }
+}
+
+.ball:nth-child(2) {
+    animation: bounce-3 2.1s ease-in-out 0.3s infinite;
+}
+
+@keyframes bounce-2 {
+    50% {
+        transform: translateY(-10px);
+        width: 3px;
+        height: 3px;
+    }
+}
+
+.ball:nth-child(3) {
+    animation: bounce-3 2.1s ease-in-out 0.6s infinite;
+}
+
+@keyframes bounce-3 {
+    50% {
+        transform: translateY(-10px);
+        width: 3px;
+        height: 3px;
+    }
+}
+
+button {
+    margin: 0 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-bottom: 3px solid white;
+}
+
+.blocked {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.unblocked {
+    background-image: linear-gradient(204deg, #FF8404 0%, #C20058 100%);
+    background-size: 180% 180%;
+    animation: gradient-animation 1.5s ease infinite;
+    cursor: pointer;
+}
+
+
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.aviator {
+    width: 300px;
+}
+
+.roleta {
+    width: 200px;
+}
+
+.wild-ape {
+    width: 250px;
+}
+
+.sweet {
+    width: 200px;
+}
+
+.imagemsinal2 {
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+    border-bottom: 2px solid white;
+    background: #363636;
+}
+
+.avatar2 {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 1rem auto;
+}
+
+.penalty {
+    width: 200px;
+    margin-top: 1rem;
+}
+
+.mines {
+    margin-bottom: .5rem;
+}
+
+.bacbo {
+    width: 210px;
+    margin-top: .5rem;
+}
+
+#imagem-aleatoria2 {
+    width: 100px;
+    height: 80px;
+    border-radius: 5px;
+    bottom: 25px;
+    position: relative;
+}
+
+#imagem-aleatoria {
+    width: 335px;
+    border-radius: 5px;
+}
+
+.planopremium {
+    padding: 0 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.link-planopremium {
+    text-decoration: none;
+    color: white;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.pulsing {
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+    animation: pulse 1.5s infinite;
+}
+
+
+
+
+.header-game {
+    width: 370px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.arrow {
+    width: 25px;
+    height: 25px;
+    padding: 0 1.5rem;
+
+}
+
+
+
+.svg2 {
+    margin-bottom: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+.text-premium {
+    color: black;
+}
+
+
+.game2 {
+    padding: .5rem;
+    border-radius: 15px;
+    background-color: var(--color-one);
+    border: 1px solid rgba(255, 255, 255, 0.247);
+}
+

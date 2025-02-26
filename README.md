@@ -1,1 +1,1 @@
-# cronosbet
+# Developed by kkZ
